@@ -47,7 +47,7 @@ layers:
   - ','
   - .
   - /
-  - RSHFT
+  - ']'
   - MUTE
   - LGUI
   - LEFT ARROW
@@ -58,7 +58,7 @@ layers:
   - SPACE
   - UP ARROW
   - DOWN ARROW
-  - RGUI
+  - '['
   - ENTER
   - RIGHT
   - UP ARROW
