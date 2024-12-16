@@ -259,3 +259,8 @@ layers:
   - C
   - D
   - E
+combos:
+- p: [15, 16]
+  k: {t: lower, h: toggle}
+- p: [27, 28]
+  k: {t: default, h: toggle}
