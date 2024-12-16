@@ -37,9 +37,9 @@
             flavor = "tap-preferred";
             hold-trigger-key-positions = <28 27 26 25 31 32 33 34>;
             hold-trigger-on-release;
-            tapping-term-ms = <270>;
+            tapping-term-ms = <200>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <230>;
+            require-prior-idle-ms = <200>;
         };
     };
 
