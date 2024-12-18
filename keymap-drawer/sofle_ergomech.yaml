@@ -262,5 +262,5 @@ layers:
 combos:
 - p: [15, 16]
   k: {t: lower, h: toggle}
-- p: [27, 28]
+- p: [39, 40]
   k: {t: default, h: toggle}
