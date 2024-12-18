@@ -53,7 +53,7 @@
 
         to-default {
             bindings = <&to 0>;
-            key-positions = <27 28>;
+            key-positions = <39 40>;
         };
     };
 
