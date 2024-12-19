@@ -28,18 +28,32 @@
     };
 
     behaviors {
-        homey: homey {
+        homey_left: homey_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOMEY";
+            label = "HOMEY_LEFT";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <28 27 26 25 31 32 33 34>;
+            hold-trigger-key-positions = <28 27 26 25 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41 50 51 52 53 54 55 57 56>;
             hold-trigger-on-release;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <230>;
             quick-tap-ms = <300>;
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <230>;
+        };
+
+        homey_right: homey_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEY_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <230>;
+            quick-tap-ms = <300>;
+            require-prior-idle-ms = <230>;
+            flavor = "tap-preferred";
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 42 43 44 45 46 47 54 55 56 57 51 52 53 50>;
+            hold-trigger-on-release;
         };
     };
 
@@ -71,12 +85,12 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp EQUAL   &kp N1             &kp N2                 &kp N3               &kp N4             &kp N5      &kp N6     &kp N7              &kp N8                &kp N9                  &kp N0              &kp MINUS
-&kp TAB     &kp Q              &kp W                  &kp F                &kp P              &kp B       &kp J      &kp L               &kp U                 &kp Y                   &kp SEMICOLON       &kp BACKSLASH
-&kp ESCAPE  &homey LEFT_ALT A  &homey LEFT_CONTROL R  &homey LEFT_SHIFT S  &homey LEFT_GUI T  &kp G       &kp M      &homey RIGHT_GUI N  &homey RIGHT_SHIFT E  &homey RIGHT_CONTROL I  &homey RIGHT_ALT O  &kp SQT
-&kp GRAVE   &kp Z              &kp X                  &kp C                &kp D              &kp V       &kp K      &kp H               &kp COMMA             &kp DOT                 &kp FSLH            &kp RIGHT_BRACKET
-&kp C_MUTE  &kp LGUI           &kp LEFT_ARROW         &kp RIGHT_ARROW      &kp BACKSPACE      &kp LSHIFT  &kp ENTER  &kp SPACE           &kp UP_ARROW          &kp DOWN_ARROW          &kp LEFT_BRACKET
-                                                                                                          &kp ENTER  &kp RIGHT           &kp UP_ARROW          &kp LEFT                &kp DOWN
+&kp EQUAL   &kp N1                  &kp N2                      &kp N3                    &kp N4                  &kp N5      &kp N6     &kp N7                    &kp N8                      &kp N9                        &kp N0                    &kp MINUS
+&kp TAB     &kp Q                   &kp W                       &kp F                     &kp P                   &kp B       &kp J      &kp L                     &kp U                       &kp Y                         &kp SEMICOLON             &kp BACKSLASH
+&kp ESCAPE  &homey_left LEFT_ALT A  &homey_left LEFT_CONTROL R  &homey_left LEFT_SHIFT S  &homey_left LEFT_GUI T  &kp G       &kp M      &homey_right RIGHT_GUI N  &homey_right RIGHT_SHIFT E  &homey_right RIGHT_CONTROL I  &homey_right RIGHT_ALT O  &kp SQT
+&kp GRAVE   &kp Z                   &kp X                       &kp C                     &kp D                   &kp V       &kp K      &kp H                     &kp COMMA                   &kp DOT                       &kp FSLH                  &kp RIGHT_BRACKET
+&kp C_MUTE  &kp LGUI                &kp LEFT_ARROW              &kp RIGHT_ARROW           &kp BACKSPACE           &kp LSHIFT  &kp ENTER  &kp SPACE                 &kp UP_ARROW                &kp DOWN_ARROW                &kp LEFT_BRACKET
+                                                                                                                              &kp ENTER  &kp RIGHT                 &kp UP_ARROW                &kp LEFT                      &kp DOWN
             >;
 
             sensor-bindings =
