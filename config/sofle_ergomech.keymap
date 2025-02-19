@@ -89,7 +89,7 @@
 &kp TAB     &kp Q                   &kp W                       &kp F                     &kp P                   &kp B       &kp J      &kp L                     &kp U                       &kp Y                         &kp SEMICOLON             &kp BACKSLASH
 &kp ESCAPE  &homey_left LEFT_ALT A  &homey_left LEFT_CONTROL R  &homey_left LEFT_SHIFT S  &homey_left LEFT_GUI T  &kp G       &kp M      &homey_right RIGHT_GUI N  &homey_right RIGHT_SHIFT E  &homey_right RIGHT_CONTROL I  &homey_right RIGHT_ALT O  &kp SQT
 &kp GRAVE   &kp Z                   &kp X                       &kp C                     &kp D                   &kp V       &kp K      &kp H                     &kp COMMA                   &kp DOT                       &kp FSLH                  &kp RIGHT_BRACKET
-&kp C_MUTE  &kp LGUI                &kp LEFT_ARROW              &kp RIGHT_ARROW           &kp BACKSPACE           &kp LSHIFT  &kp ENTER  &kp SPACE                 &kp UP_ARROW                &kp DOWN_ARROW                &kp LEFT_BRACKET
+&kp C_MUTE  &mo 1                   &kp LEFT_ARROW              &kp RIGHT_ARROW           &kp BACKSPACE           &kp LSHIFT  &kp ENTER  &kp SPACE                 &kp UP_ARROW                &kp DOWN_ARROW                &kp LEFT_BRACKET
                                                                                                                               &kp ENTER  &kp RIGHT                 &kp UP_ARROW                &kp LEFT                      &kp DOWN
             >;
 
