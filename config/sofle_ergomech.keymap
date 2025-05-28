@@ -62,12 +62,12 @@
 
         to-lower {
             bindings = <&to 1>;
-            key-positions = <15 16>;
+            key-positions = <16 13>;
         };
 
         to-default {
             bindings = <&to 0>;
-            key-positions = <39 40>;
+            key-positions = <40 37>;
         };
     };
 
