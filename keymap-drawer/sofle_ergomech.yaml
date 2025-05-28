@@ -1,3 +1,4 @@
+layout: {zmk_keyboard: sofle_ergomech}
 layers:
   default:
   - '='
@@ -260,7 +261,7 @@ layers:
   - D
   - E
 combos:
-- p: [15, 16]
+- p: [16, 13]
   k: {t: lower, h: toggle}
-- p: [39, 40]
+- p: [40, 37]
   k: {t: default, h: toggle}
